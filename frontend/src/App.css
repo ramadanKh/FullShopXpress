@@ -1,0 +1,118 @@
+/* ================================
+   GLOBAL LAYOUT / STICKY FOOTER
+=================================== */
+
+/* Make the page height fill entire screen */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main wrapper to control full-page layout */
+.app-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content expands to push footer down */
+.content-wrapper {
+  flex: 1;
+}
+
+
+
+/* ================================
+   OPTIONAL GLOBAL STYLES
+=================================== */
+
+/* Smooth font style (optional) */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Container spacing override if needed */
+.container {
+  max-width: 1200px;
+}
+
+/* Improve page spacing */
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+
+
+/* ================================
+   NAVBAR GLOBAL FIXES
+=================================== */
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Adjust cart badge position */
+.nav-link .badge {
+  font-size: 0.7rem;
+}
+
+
+
+/* ================================
+   FOOTER STYLE
+=================================== */
+
+footer {
+  background: #212529; /* Dark color */
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+
+/* ================================
+   PRODUCT CARDS
+=================================== */
+
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+/* ================================
+   NOT FOUND PAGE
+=================================== */
+
+.not-found-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.not-found-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.not-found-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
